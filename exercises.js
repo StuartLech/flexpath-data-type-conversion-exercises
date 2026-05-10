@@ -401,7 +401,11 @@ function exercise_16() {
 
   // CODE IN THE OPEN LINES BELOW
 
-  const placeholder = "Delete this line and code in this space";
+  try {
+    let invalidJson = JSON.parse("This is not JSON");
+  } catch (error) {
+    console.log("Error parsing JSON:", error.message);
+  }
 
   // CODE IN THE OPEN LINES ABOVE
 }
